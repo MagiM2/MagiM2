@@ -277,7 +277,7 @@ mixpanel.init("07f5d6f959a9cf7f31d225d643f95bfa");</script><!-- end Mixpanel -->
                         <form class="form-inline" role="form" onsubmit="mixpanelSubmit()">
                           <div class="form-group">
                             <label class="sr-only" for="exampleInputEmail2">adresse mail</label>
-                            <input type="email" class="form-control transparent" placeholder="Votre mail...">
+                            <input type="email" id="email" class="form-control transparent" placeholder="Votre mail...">
                           </div>
                           <button type="submit" class="btn btn-info btn-fill">rejoignez nous</button>
                         </form>
@@ -288,8 +288,8 @@ mixpanel.init("07f5d6f959a9cf7f31d225d643f95bfa");</script><!-- end Mixpanel -->
 							mixpanel.people.set({
 								"$created": new Date().toISOString(),
 								"$email":  document.getElementById("email").value
-							})
-							console.log("tst");
+							});
+							
 						}	
 					</script>
                     </div>
